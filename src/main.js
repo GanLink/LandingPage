@@ -39,6 +39,11 @@ const contentByLanguage = {
         eyebrow: 'Conoce al equipo',
         title: 'Personas reales detrás de cada release'
       },
+      teamVideo: {
+        eyebrow: 'About The Team',
+        title: 'Video del equipo',
+        description: 'A continuación, se presenta el video About The Team.'
+      },
       pricing: {
         eyebrow: 'Planes',
         title: 'La inversión correcta para cada etapa',
@@ -255,6 +260,11 @@ const contentByLanguage = {
       about: {
         eyebrow: 'Meet the team',
         title: 'Real people behind every release'
+      },
+      teamVideo: {
+        eyebrow: 'About The Team',
+        title: 'Team video',
+        description: "Below you'll find the About The Team video."
       },
       pricing: {
         eyebrow: 'Plans',
@@ -657,6 +667,22 @@ const render = () => {
             </div>
             <div class="grid team-grid">
               ${teamCards}
+            </div>
+          </div>
+        </section>
+
+        <section id="team-video" class="section video-section">
+          <div class="section-shell">
+            <div class="section-heading">
+              <p class="eyebrow">${sections.teamVideo.eyebrow}</p>
+              <h2>${sections.teamVideo.title}</h2>
+              <p class="subheading">${sections.teamVideo.description}</p>
+            </div>
+            <div class="video-card">
+              <video controls playsinline poster="/logo-agrotrace.png">
+                <source src="/about-the-team.mp4" type="video/mp4" />
+                ${currentLanguage === 'es' ? 'Tu navegador no soporta video HTML5.' : 'Your browser does not support HTML5 video.'}
+              </video>
             </div>
           </div>
         </section>

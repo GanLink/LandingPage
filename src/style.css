@@ -596,6 +596,22 @@ a {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.video-card {
+  padding: 1.5rem;
+  border-radius: 32px;
+  background: linear-gradient(135deg, rgba(14, 159, 110, 0.08), rgba(248, 255, 251, 0.95));
+  border: 1px solid rgba(14, 159, 110, 0.12);
+  box-shadow: var(--shadow);
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 24px;
+  outline: none;
+  border: 1px solid rgba(14, 159, 110, 0.2);
+  box-shadow: 0 30px 60px rgba(10, 84, 58, 0.25);
+}
+
 .testimonial-card:hover,
 .pricing-card:hover,
 .team-card:hover,
