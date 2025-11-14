@@ -679,10 +679,16 @@ const render = () => {
               <p class="subheading">${sections.teamVideo.description}</p>
             </div>
             <div class="video-card">
-              <video controls playsinline poster="/logo-agrotrace.png">
-                <source src="/about-the-team.mp4" type="video/mp4" />
-                ${currentLanguage === 'es' ? 'Tu navegador no soporta video HTML5.' : 'Your browser does not support HTML5 video.'}
-              </video>
+              <div class="video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/0QDyGq5A3PI"
+                  title="About The Team"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  referrerpolicy="strict-origin-when-cross-origin"
+                ></iframe>
+              </div>
             </div>
           </div>
         </section>
